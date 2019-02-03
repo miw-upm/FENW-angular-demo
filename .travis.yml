@@ -24,6 +24,7 @@ deploy:
   skip_cleanup: true
   provider: heroku
   local_dir: dist/
+  app: demo
   api_key:
     secure: $HEROKU
   on:
