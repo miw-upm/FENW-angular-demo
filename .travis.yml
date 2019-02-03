@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - '8'
+
+sudo: required
+
+branches:
+  only:
+    - develop
+    - master
+
+notifications:
+  email:
+    recipients:
+      - j.bernal@upm.es
+
+script:
+  - npm install
+  - npm run build --prod
+
+
