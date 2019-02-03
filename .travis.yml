@@ -13,9 +13,11 @@ notifications:
       - j.bernal@upm.es
 
 script:
+  - npm install -g @angular/cli
   - npm install
-  - npm run build --prod
+  - ng build --prod
 
+# Deploy https://fenw-angular-demo.herokuapp.com
 deploy:
   provider: heroku
   api_key:
