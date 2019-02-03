@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node ./server.js",
-    "postinstall": "ng build --prod",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -46,8 +46,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
-
+    "tslint": "~5.11.0"
   },
   "engines": {
     "node": "8.15.0",

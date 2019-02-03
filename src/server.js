@@ -1,6 +1,8 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+let express = require('express');
+let app = express();
+
+let path = require('path');
+
 
 
 //Set static Folder
