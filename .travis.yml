@@ -12,9 +12,11 @@ notifications:
     recipients:
       - j.bernal@upm.es
 
-script:
+before_script:
   - npm install -g @angular/cli
   - npm install
+
+script:
   - ng build --prod --aot
 
 # Deploy https://fenw-angular-demo.herokuapp.com
