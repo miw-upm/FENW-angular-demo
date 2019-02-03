@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ng build --aot --prod",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,6 +11,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~7.2.1",
+    "@angular/compiler-cli": "~7.2.0",
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
