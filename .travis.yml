@@ -17,7 +17,7 @@ before_script:
   - npm install
 
 script:
-  - ng build -prod --aot
+  - ng build --prod --aot
 
 # Deploy https://fenw-angular-demo.herokuapp.com
 deploy:
