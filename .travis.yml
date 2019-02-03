@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '8.9'
+  - '8'
 
 branches:
   only:
@@ -15,7 +15,7 @@ notifications:
 script:
   - npm install -g @angular/cli
   - npm install
-  - ng build --prod
+  - ng build --prod --aot
 
 # Deploy https://fenw-angular-demo.herokuapp.com
 deploy:
