@@ -23,6 +23,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: heroku
+  local_dir: dist/
   api_key:
     secure: $HEROKU
   on:

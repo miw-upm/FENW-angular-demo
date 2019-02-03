@@ -1,18 +1,15 @@
 let express = require('express');
 let app = express();
 
-let path = require('path');
-
-
 
 //Set static Folder
-app.use(express.static(path.join(__dirname + '/dist/demo')));
+app.use(express.static(path.join(__dirname + '/dist')));
 
-//Index routing
-app.get('/*', (req, res)=>{
-  res.sendFile(path.join(__dirname + '/dist/demo/index.html'));
-});
 
 app.listen(process.env.PORT || 8080, ()=>{
   console.log('Server started on port', port);
+});
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/demo/index.html'));
 });
