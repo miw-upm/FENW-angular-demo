@@ -21,6 +21,7 @@ script:
 
 # Deploy https://fenw-angular-demo.herokuapp.com
 deploy:
+  skip_cleanup: true
   provider: heroku
   api_key:
     secure: $HEROKU
